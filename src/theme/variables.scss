@@ -86,3 +86,13 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+@font-face{
+  font-family: 'DidactGothic';
+  src: url('../assets/fonts/DidactGothic/DidactGothic-Regular.ttf');
+}
+
+
+$font-family-base: 'DidactGothic';
+$font-family-ios-base: 'DidactGothic';
+$font-family-md-base: 'DidactGothic';
+$font-family-wp-base: 'DidactGothic';

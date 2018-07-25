@@ -1,0 +1,63 @@
+<!--<ion-header transparent>
+  <ion-navbar transparent>
+    <ion-title>
+      Tunisia360
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+
+
+<ion-content padding>
+
+    <div class="overlay-bottom-left" #btnBack>
+        <button ion-button round outline color="light" (click)="this.navCtrl.pop();">
+          <ion-icon name="arrow-back"></ion-icon>
+          &nbsp;&nbsp;Back
+        </button>
+
+    </div>
+
+
+    <div class="overlay-center-bottom" #zoomBtns>
+        <button #zoomIn ion-button round outline color="light" (click)="zoomInCam()" >
+            <ion-icon name="add"></ion-icon>
+         </button>
+
+         <button  #zoomOut ion-button round outline color="light" (click)="zoomOutCam()">
+            <ion-icon name="remove"></ion-icon>
+         </button>
+    </div>
+
+    <div class="overlay-bottom-right" #btnRand>
+        <button style="text-transform: none;float: right;" ion-button round outline color="light" (click)="GoToRandomPlace()">
+           <ion-icon name="repeat"></ion-icon>
+           &nbsp;&nbsp;Random
+        </button>
+    </div>
+
+    <div class="overlay-top-right" >
+
+           <ion-icon #eyeoff (click)="toggleShowOptions()" name="eye-off"></ion-icon>
+           <ion-icon #eyeon (click)="toggleShowOptions()" name="eye" class="hidden"></ion-icon>
+
+    </div>
+
+    <div class="overlay-top-left" (click)="OpenPageFromName()" >
+
+   <h5><ion-icon name="ios-information-circle-outline"></ion-icon> {{ Gov_name }} </h5>
+
+ </div>
+
+   <a-scene debug vr-mode-ui="enabled: false">
+
+        <a-camera #cam camera="active: true" look-controls orbit-controls="target: 0 1.6 -0.5; minDistance: 0.5; maxDistance: 180; initialPosition: 0 5 15" >
+
+        </a-camera>
+        <a-sky #mysky rotation="0 -20 0">
+        </a-sky>
+      </a-scene>
+
+
+</ion-content>
+
