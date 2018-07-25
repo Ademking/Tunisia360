@@ -1,4 +1,4 @@
-# Tunisia360
+# :earth_africa: Tunisia360 :mag: :heart:
 
 Explore Tunisia like never before !
 You can Dive into new adventures thanks to virtual reality 360 images.
